@@ -7,6 +7,7 @@
   </head>
   <body>
     <header>
+      <center>
       <nav>
         <ul class="menu">
           <li>
@@ -22,11 +23,12 @@
             <a href="#referencias">Referencias</a>
           </li>
           <li>
-            <a href="datosc">Datos de contactos</a>
+            <a href="#datosc">Datos de contactos</a>
           </li>
 
         </ul>
       </nav>
+      </center>
       <h1>Curriculum Vitae</h1>
     </header>
     <section id="datosp">
@@ -45,6 +47,7 @@
     <section id="estudiosr">
       <article>
         <center><h2>Estudios Realizados y en Proceso</h2></center>
+        <div class="row">
           <div class="studr div1">
             <h3>ETCR - Santos Michelena</h3>
             <h4>2009</h4>
@@ -60,21 +63,157 @@
            <h4>2014</h4>
            <p>Ing.Sistemas (En proceso-1er proceso)</p>
           </div>
-          <div>
-           <h3>UNA</h3>
-           <h4>2014</h4>
-           <p>Ing.Sistemas (En proceso-1er proceso)</p>
-          </div>
+         
       </article>
-      <article>
+      <div class="studr div1 div4">
+      <article >
         <h2>Habilidades</h2>
-        <div class="conten-hab">
+        <div>
           <input type="range" value="60" max="100" min="0" disabled="" /> Ruby
         </div>
-        <div class="conten-hab">
-          <input type="range" value="90" max="100" min="0" disabled="" /> PHP
-        </div>  
+        <div>
+          <input type="range" value="30" max="100" min="0" disabled="" /> Ruby on Rails
+        </div>
+        <div >
+          <input type="range" value="50" max="100" min="0" disabled="" /> C
+        </div>
+        <div>
+          <input type="range" value="50" max="100" min="0" disabled="" /> C++
+        </div>
       </article>
+      </div>
+      </div>
     </section>
+    <section id="experiencial">
+      <div>
+        <h3>Trabajo 1 <span>06/08/2007- 20/12/2009</span></h3>
+        <h4>Empresa: Juans foto arts</h4>
+        <h5>Jefe Inmediato: Juancarlos Higuera</h5>
+        <p>
+          <strong>Diseño y edicicion de imagenes:</strong> Montaje, conacion, reconstruccion, recuperacion de imagenes.
+        </p>
+      </div>
+      <div>
+        <h3>Trabajo 2 <span>06/01/2011- 14/12/2011</span></h3>
+        <h4>Empresa: Arsigraf</h4>
+        <h5>Frank Martinez</h5>
+        <p>
+          <strong>Reparacion y mantenimiento de equipos:</strong>Computadoras, laptop, cambiar filtro, montar un SO, etc.
+        </p>        
+      </div>
+    </section>
+    <section id="referencias">
+      <article>
+        <h2>Personales</h2>
+        <table>
+          <tr>
+            <th>Nombre</th>
+            <th>Telefono</th>
+            <th>Correo</th>
+          </tr>
+          <tr>
+            <th>Moises Gonzalez</th>
+            <th>04262137998</th>
+            <th>darkzer01@gmail.com</th>
+          </tr>
+          <tr>
+            <th>Genesis Mendoza</th>
+            <th>04265186106</th>
+            <th>genesiky@hormail.com</th>
+          </tr> 
+          <tr>
+            <th>Francisco Lopez</th>
+            <th>04241882564</th>
+            <th>bosxed@hotmail.es</th>
+          </tr>         
+        </table>
+      </article>
+      <article>
+        <h2>Comerciales</h2>
+        <table>
+          <tr>
+            <th>Banco</th>
+            <th>Telefono</th>
+            <th>Correo</th>
+          </tr> 
+          <tr>
+            <th>Mercantil</th>
+            <th>02435671234</th>
+            <th>aguill@gmail.com</th>
+          </tr>
+          <tr>
+            <th>el pollon</th>
+            <th>04281245634</th>
+            <th>aanalizameelcuad@gmail.com</th>
+          </tr>
+        </table>
+      </article>  
+        <article>
+        <h2>Laborales</h2> 
+        <table>
+            <tr>
+                <th>Nombre</th>
+                <th>Teléfono</th>
+                <th>Correo</th>
+            </tr>
+            <tr>
+                <td>Persona 1</td>
+                <td>04165543124</td>
+                <td>correo1@correo.com</td>
+            </tr>
+            <tr>
+                <td>Persona 2</td>
+                <td>0416876511</td>
+                <td>correo2@correo.com</td>
+            </tr>
+            <tr>
+                <td>Persona 3</td>
+                <td>04168794641</td>
+                <td>correo3@correo.com</td>
+            </tr>
+        </table>                
+                
+          </article>              
+      </table>
+    </section>  
+    <section id="datosc">
+            <article>
+                <form action="contacto.html" method="POST">
+                    <div class="conten-input">
+                        <input type="text" name="nombre" placeholder="Ingrese su Nombre" />
+                    </div>
+                    <div class="conten-input">
+                        <input type="email" name="correo" placeholder="Ingrese su Correo" />
+                    </div>
+                    <div class="conten-input">
+                        <input type="tel" name="tefono" placeholder="Ingrese su Télefono" />
+                    </div>
+                    <div class="conten-input">
+                        <textarea name="mensaje" placeholder="Ingrese el Mensaje"></textarea>
+                    </div>
+                    <div class="conten-input">
+                        <input type="submit" name="submit" value="Enviar Correo" />
+                    </div>
+                </form>
+            </article>
+            <article>
+                <ul>
+                    <li>
+                        <img src="img/iconos/location-black.png"  /> Av. Fuerzas Armadas, Esq. Socorro a Calero 
+                    </li>
+                    <li>
+                        <img src="img/iconos/phone-black.png"  /> 0416-5578871
+                    </li>
+                    <li>
+                        <img src="img/iconos/mail-black.png"  /> masasss.the.end@gmail.com
+                    </li>
+                </ul>
+            </article>
+    </section>
+    <footer>
+      <center><div id="pie_pagina">
+         &copy; Reservamos todos los derechos de los blancos y de los negros.
+      </div></center>
+    </footer>
   </body>
 </html>
